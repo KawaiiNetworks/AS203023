@@ -1,3 +1,11 @@
+local-asn: 203023
+
+as-set:
+  member-limit: 250
+  prefix-limit: 100
+  limit-violation: accept # accept, deny
+
+router:
   - name: core.mci.203023.atlas.projectk.org
     src:
       ipv6: 2602:f93b:a00::1
