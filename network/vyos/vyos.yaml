@@ -1,0 +1,17 @@
+  - name: core.mci.203023.atlas.projectk.org
+    src:
+      ipv6: 2602:f93b:a00::1
+    protocols:
+      rpki:
+        - server: rtr.rpki.cloudflare.com
+          port: 8282
+          preference: 10
+      bgp:
+        ibgp: []
+        upstream:
+          - asn: 27523
+            neighbor-address: 2602:f93b:131:ffff::1
+            update-source: eth0
+        routeserver: []
+        peer: []
+        downstream: []
