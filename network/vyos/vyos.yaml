@@ -19,6 +19,9 @@ router:
         upstream:
           - asn: 27523
             neighbor-address: 2602:f93b:131:ffff::1
+            pre-import-accept:
+              - action: deny
+                match: as-path AUTOGEN-AS-ALL
             update-source: eth0
         routeserver: []
         peer: []
