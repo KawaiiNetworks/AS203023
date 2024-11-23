@@ -19,6 +19,7 @@ router:
         upstream:
           - asn: 27523
             neighbor-address: 2602:f93b:131:ffff::1
+            soft-reconfiguration-inbound: false
             pre-import-accept:
               - action: deny
                 match: as-path AUTOGEN-AS-ALL
