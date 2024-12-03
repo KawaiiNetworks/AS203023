@@ -67,8 +67,8 @@ router:
         upstream:
           - asn: 27523
             neighbor-address:
-              - fe80::41
               - 169.254.12.2
+              - 2602:f93b:ffff:ffff:4:1:0:1
             pre-import-accept:
               - action: permit
                 match: as-path AUTOGEN-AS-PassGFW
