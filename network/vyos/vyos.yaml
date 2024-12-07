@@ -8,7 +8,8 @@ as-set:
 router:
   - name: core.mci.203023.atlas.projectk.org
     src:
-      ipv6: 2602:f93b:a00::1
+      - protocol: bgp
+        ipv6: 2602:f93b:a00::1
     protocols:
       rpki:
         - server: rtr.rpki.cloudflare.com
