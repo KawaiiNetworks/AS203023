@@ -86,7 +86,7 @@ router:
                 match: as-path AUTOGEN-AS-PassGFW
                 on-match-next: false
               - action: deny
-                match: as-path AUTOGEN-AS-ALL
+                match: as-path AUTOGEN-AS-Tier1
             update-source: wg1241
         routeserver: []
         peer: []
